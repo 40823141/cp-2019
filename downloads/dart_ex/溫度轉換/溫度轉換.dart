@@ -1,5 +1,5 @@
 int x = 0;
-num F = 87;
+num F = 86;
 num C = 30;
 
 void main(){
