@@ -20,7 +20,8 @@ document.getElementById("iframe").height = 800 ;
 <!-- 內建放入的 Dart 原始碼 -->
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><iframe height="800" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823141&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperture&amp;theme=dark" width="1200"></iframe></p>
-<p></p><h1>第七周</h1>
+<p></p>
+<h1>第七周</h1>
 <p>gits:<a href="https://gist.github.com/40823141/9b1e2f650da0dd49545ce6df48b6e2f3">https://gist.github.com/40823141/9b1e2f650da0dd49545ce6df48b6e2f3</a></p>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=9b1e2f650da0dd49545ce6df48b6e2f3" width="800"></iframe></p>
 <p></p>
@@ -30,3 +31,26 @@ document.getElementById("iframe").height = 800 ;
 <p>gits:<a href="https://gist.github.com/40823141/6d6dac15e56d1d228902ce8718918ec4">https://gist.github.com/40823141/6d6dac15e56d1d228902ce8718918ec4</a></p>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=9b1e2f650da0dd49545ce6df48b6e2f3" width="800"></iframe></p>
 <p><img alt="" height="357" src="/images/%E4%B8%8B%E8%BC%89%20(2).jpg" width="600"/></p>
+<h1>溫度偵測</h1>
+<p></p>
+<pre></pre>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823141&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+function original(){
+document.getElementById("iframe").width = 1200 ;
+document.getElementById("iframe").height = 800 ;
+}
+</script>
+<!-- 取 Dart 程式的按鈕 -->
+<p><button onclick="getDart('temperture 2')">華攝氏偵測</button></p>
+<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
+<p><iframe height="800" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=40823141&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/temperture 2&amp;theme=dark" width="1200"></iframe></p>
+<p></p>
