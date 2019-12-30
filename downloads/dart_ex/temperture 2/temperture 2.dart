@@ -1,19 +1,18 @@
-//¦b¦¹¿é¤J·Å«×
-List candf = ["20C", "30C", "50F", "40C", "23F"];
+int x = 0;
+num F = 86;
+num C = 30;
 
-void main() {
-  for (var i in candf) {
-    if (i[2] == "C") {
-      var o = (i[0] + i[1]);
-      var c = num.parse(o);
-      num f = c * 9 / 5 + 32;
-
-      print("C $c ¢Xµ¥©óF $f ¢X");}
-    if (i[2] == "F") {
-      var o = (i[0] + i[1]);
-      var f = num.parse(o);
-      num c = (f - 32) * 5 / 9;
-      print("F $f ¢Xµ¥©óC $c ¢X ");
-    }
+void main(){
+  if (x == 0) {
+  num F2 = C*9/5+32;
+			print('F=$F2');
   }
+  else{
+    if (x==1){
+    num C2 = (F-32)*5/9;
+			print('C=$C2');
+  }
+
+  }
+    print('x=0,1åˆ‡æ›(è¯æ°ã€æ”æ°)');
 }
